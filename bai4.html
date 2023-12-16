@@ -7,12 +7,16 @@
 <body>
 <input type="text" id="so1">
 <input type="text" id="so2">
+
 <button onclick="sum()">nhập</button>
 <label id="kq"></label>
 <script>
     function sum() {
         let a = +document.getElementById('so1').value;
         let b = +document.getElementById('so2').value;
+        // alert('gia tri a la: ' + a + ' giá trị b là: ' + b);
+
+        alert(`Gia tri cua a la ${a} gia tri cua b la: ${b}`)
         document.getElementById('kq').innerText= 'tong a va b la ' + (a + b);
     }
 </script>
