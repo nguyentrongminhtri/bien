@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="so1">
+<input type="text" id="so2">
+<button onclick="sum()">nhập</button>
+<label id="kq"></label>
+<script>
+    function sum() {
+        let a = +document.getElementById('so1').value;
+        let b = +document.getElementById('so2').value;
+        document.getElementById('kq').innerText= 'tong a va b la ' + (a + b);
+    }
+</script>
+</body>
+</html>

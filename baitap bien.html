@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>baitap</title>
+</head>
+<body>
+<input type="text" id="number" oninput="handleInputChange()">
+<button onclick="code1()">nhập</button>
+<script>
+    function code1() {
+        let a = document.getElementById('number').value;
+        console.log(a);
+        document.getElementById("code1").innerHTML = a
+    }
+
+    function handleInputChange(){
+        let value = document.getElementById("number").value;
+        console.log(value)
+    }
+</script>
+</body>
+</html>
